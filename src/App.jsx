@@ -1,7 +1,7 @@
 import StepOne from "./components/StepOne";
 import StepTwo from "./components/StepTwo";
 import StepThree from "./components/StepThree";
-
+import StepFour from "./components/StepFour";
 import { useState } from "react";
 function App() {
   const [step, setStep] = useState(1);
@@ -66,16 +66,18 @@ function App() {
         </ul>
       </nav>
 
-      <form>
+      <form className="mt-8 m-auto text-center w-3/4">
         {step === 1 && <StepOne />}
         {step === 2 && <StepTwo />}
         {step === 3 && <StepThree />}
+        {step === 4 && <StepFour />}
       </form>
-      <hr></hr>
 
       {/* Navigation Buttons */}
-      {step !== 1 && <button onClick={prevStep}>Previous Step</button>}
-      {step !== 3 && <button onClick={nextStep}>Next Step</button>}
+      <div className="m-auto text-center mt-6">
+        {step !== 1 && <button onClick={prevStep}>Previous Step</button>}
+        {step !== 4 && <button onClick={nextStep}>Next Step</button>}
+      </div>
     </section>
   );
 }

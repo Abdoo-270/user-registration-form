@@ -1,7 +1,7 @@
-const StepThree = () => {
+const StepFour = () => {
   return (
     <h1>
-      Three: StepFour Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Four: StepFour Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       Autem, quidem aliquid exercitationem reiciendis itaque ipsum atque
       accusantium ea quos nam ipsam ratione aspernatur veritatis impedit maiores
       dolor, cum eaque dignissimos.
@@ -9,4 +9,4 @@ const StepThree = () => {
   );
 };
 
-export default StepThree;
+export default StepFour;
