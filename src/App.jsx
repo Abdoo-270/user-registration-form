@@ -1,7 +1,4 @@
-import StepOne from "./components/StepOne";
-import StepTwo from "./components/StepTwo";
-import StepThree from "./components/StepThree";
-import StepFour from "./components/StepFour";
+import { StepOne, StepTwo, StepThree, StepFour } from "./components/index";
 import { useState } from "react";
 function App() {
   const [step, setStep] = useState(1);
@@ -13,7 +10,7 @@ function App() {
   };
   return (
     <section>
-      <h1 className="text-red-700 capitalize mt-6 mb-5 text-3xl text- text-center font-bold	">
+      <h1 className=" capitalize mt-6 mb-5 text-3xl text- text-center font-bold	">
         user signup multi steps form
       </h1>
       <nav className="m-auto w-3/4 flex justify-between m-2  border-2 border-solid">
@@ -33,8 +30,8 @@ function App() {
             1
           </span>
           <div className="pl-3 ">
-            <p className=" font-bold uppercase">your info</p>
-            <p className="text-xs">Lorem Ipsum is simply</p>
+            <p className=" font-bold uppercase text-red-600">account</p>
+            <p className="text-xs text-red-700">Lorem Ipsum is simply</p>
           </div>
         </ul>
         <ul className="m-1 flex p-4 w-full bg-gray-300">
@@ -42,7 +39,7 @@ function App() {
             2
           </span>
           <div className="pl-3 ">
-            <p className="font-bold uppercase">select plan</p>
+            <p className="font-bold uppercase">personal info</p>
             <p className="text-xs">Lorem Ipsum is simply</p>
           </div>
         </ul>
@@ -66,17 +63,26 @@ function App() {
         </ul>
       </nav>
 
-      <form className="mt-8 m-auto text-center w-3/4">
-        {step === 1 && <StepOne />}
-        {step === 2 && <StepTwo />}
-        {step === 3 && <StepThree />}
-        {step === 4 && <StepFour />}
-      </form>
+      {step === 1 && <StepOne />}
+      {step === 2 && <StepTwo />}
+      {step === 3 && <StepThree />}
+      {step === 4 && <StepFour />}
 
       {/* Navigation Buttons */}
-      <div className="m-auto text-center mt-6">
-        {step !== 1 && <button onClick={prevStep}>Previous Step</button>}
-        {step !== 4 && <button onClick={nextStep}>Next Step</button>}
+      <div className=" mx-60 flex justify-between items-center">
+        <div>step {step} of 4</div>
+        <div>
+          {step !== 1 && (
+            <button className="ml-2 btn btn-primary" onClick={prevStep}>
+              Previous Step
+            </button>
+          )}
+          {step !== 4 && (
+            <button className="ml-2  btn btn-primary" onClick={nextStep}>
+              Next Step
+            </button>
+          )}
+        </div>
       </div>
     </section>
   );

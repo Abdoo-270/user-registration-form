@@ -1,11 +1,48 @@
+import FormInput from "./FormInput";
 const StepOne = () => {
   return (
-    <h1>
-      One: StepFour Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Autem, quidem aliquid exercitationem reiciendis itaque ipsum atque
-      accusantium ea quos nam ipsam ratione aspernatur veritatis impedit maiores
-      dolor, cum eaque dignissimos.
-    </h1>
+    <div className="flex justify-center">
+      <div className="m-6 w-80">
+        <FormInput
+          type="text"
+          label="first name"
+          name="firstName"
+          placeHolder="John"
+        />
+        <FormInput
+          type="email"
+          label="email address"
+          name="email"
+          placeHolder="name@yourdomain.com"
+        />
+        <FormInput
+          type="password"
+          label="password"
+          name="password"
+          placeHolder="**********"
+        />
+      </div>
+      <div className="m-6 w-80">
+        <FormInput
+          type="text"
+          label="last name"
+          name="lastName"
+          placeHolder="Doe"
+        />
+        <FormInput
+          type="text"
+          label="user name"
+          name="userName"
+          placeHolder="JohnDoe123"
+        />
+        <FormInput
+          type="password"
+          label="re-Password"
+          name="rePassword"
+          placeHolder="**********"
+        />
+      </div>
+    </div>
   );
 };
 
