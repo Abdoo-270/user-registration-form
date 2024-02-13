@@ -1,69 +1,49 @@
+import FormSelect from "./FormSelect";
+import FormInput from "./FormInput";
 const StepThree = () => {
   return (
     <div className="flex justify-center">
       <div className="m-6 w-80">
-        <label className="form-control max-w-xs mb-2">
-          <div className="label">
-            <span className="label-text capitalize bold">3-step</span>
-          </div>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs rounded-none	"
-          />
-        </label>
-        <label className="form-control w-full max-w-xs mb-2">
-          <div className="label">
-            <span className="label-text capitalize">email address</span>
-          </div>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs rounded-none	"
-          />
-        </label>
-        <label className="form-control w-full max-w-xs mb-2">
-          <div className="label">
-            <span className="label-text capitalize"> password</span>
-          </div>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs rounded-none	"
-          />
-        </label>
+        <FormSelect
+          label="prefered theme"
+          options={["Dark", "Light", "Cubcake", "Darcula"]}
+          defaultValue="Light"
+        />
+        <FormSelect
+          label="gender "
+          options={["Male", "Female"]}
+          defaultValue=""
+        />
+        <div className="form-control">
+          <label className="label cursor-pointer mt-10">
+            <span className="label-text font-semibold ">
+              Do you want to send you adds
+            </span>
+            <input
+              type="checkbox"
+              checked="checked"
+              className="checkbox rounded-none"
+            />
+          </label>
+        </div>
       </div>
       <div className="m-6 w-80">
-        <label className="form-control w-full max-w-xs mb-2">
-          <div className="label">
-            <span className="label-text capitalize"> password</span>
-          </div>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs rounded-none	"
-          />
-        </label>
-        <label className="form-control w-full max-w-xs mb-2">
-          <div className="label">
-            <span className="label-text capitalize"> password</span>
-          </div>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs rounded-none	"
-          />
-        </label>
-        <label className="form-control w-full max-w-xs mb-2">
-          <div className="label">
-            <span className="label-text capitalize"> password</span>
-          </div>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs rounded-none"
-          />
-        </label>
+        <FormSelect
+          label="language "
+          options={["Turkish", "English"]}
+          defaultValue=""
+        />
+        <FormInput
+          type="number"
+          label="age"
+          name="age"
+          placeHolder="Enter your age"
+        />
+        <FormSelect
+          label="prefered contact"
+          options={["Email", "Phone Number"]}
+          defaultValue=""
+        />
       </div>
     </div>
   );
