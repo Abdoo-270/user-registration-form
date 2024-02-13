@@ -2,7 +2,7 @@ import ProgressBarElement from "./ProgressBarElement";
 const ProgressBar = ({ step }) => {
   return (
     <>
-      <div className="m-auto w-3/4 flex justify-between m-2  border-2 border-solid">
+      <div className="m-auto w-3/4 flex justify-between   border-2 border-solid">
         <ProgressBarElement
           stepNumber="1"
           stepTitle="account"
