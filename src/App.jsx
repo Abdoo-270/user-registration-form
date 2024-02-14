@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+//import SimpleForm from "./temp/SimpleForm";
 import {
   Title,
   ProgressBar,
@@ -8,9 +8,18 @@ import {
   StepThree,
   StepFour,
   NavBtns,
+  SimpleForm,
 } from "./components/index";
+import showResults from "./components/showResults";
+//!SECTION
 
 function App() {
+  const submitForm = (formData) => {
+    // Access the form data here
+    console.log("Form data:", formData);
+    // You can send the form data to a server or perform other actions
+  };
+
   const [step, setStep] = useState(1);
   const nextStep = () => {
     setStep(step + 1);
@@ -26,12 +35,8 @@ function App() {
       {/* Progress Bar */}
       <ProgressBar step={step} />
 
-      {/* Steps */}
-      {step === 1 && <StepOne />}
-      {step === 2 && <StepTwo />}
-      {step === 3 && <StepThree />}
-      {step === 4 && <StepFour />}
-
+      {/* Form */}
+      <SimpleForm onSubmit={showResults()} />
       {/* Navigation Buttons */}
       <NavBtns step={step} nextStep={nextStep} prevStep={prevStep} />
     </section>

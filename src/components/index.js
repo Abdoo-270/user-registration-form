@@ -1,25 +1,20 @@
 export { default as FormInput } from "./FormInput";
 export { default as FormSelect } from "./FormSelect";
 
-{
-  /*Steps*/
-}
+/*Steps*/
 export { default as StepOne } from "./StepOne";
 export { default as StepTwo } from "./StepTwo";
 export { default as StepThree } from "./StepThree";
 export { default as StepFour } from "./StepFour";
 
-{
-  /*Progress Bar*/
-}
+/*Progress Bar*/
 export { default as ProgressBar } from "./ProgressBar";
 
-{
-  /*Title*/
-}
+/*Title*/
 export { default as Title } from "./Title";
 
-{
-  /*Navigation Buttons*/
-}
+/*Navigation Buttons*/
 export { default as NavBtns } from "./NavBtns";
+
+/*Complex form*/
+export { default as SimpleForm } from "./SimpleForm";

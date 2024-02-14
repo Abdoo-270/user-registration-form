@@ -1,4 +1,5 @@
 import FormInput from "./FormInput";
+import { Field } from "redux-form";
 const StepOne = () => {
   return (
     <div className="flex justify-center">
