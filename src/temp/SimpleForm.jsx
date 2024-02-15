@@ -1,4 +1,3 @@
-/*
 import { Field, reduxForm } from "redux-form";
 const SimpleForm = (props) => {
   const { handleSubmit, pristine, submitting } = props;
@@ -24,5 +23,3 @@ const SimpleForm = (props) => {
 export default reduxForm({
   form: "simple", // a unique identifier for this form
 })(SimpleForm);
-
-*/

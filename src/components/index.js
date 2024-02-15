@@ -17,4 +17,4 @@ export { default as Title } from "./Title";
 export { default as NavBtns } from "./NavBtns";
 
 /*Complex form*/
-export { default as SimpleForm } from "./SimpleForm";
+export { default as ComplexForm } from "./ComplexForm";

@@ -1,5 +1,6 @@
 import FormSelect from "./FormSelect";
 import FormInput from "./FormInput";
+import { Field } from "redux-form";
 const StepThree = () => {
   return (
     <div className="flex justify-center">
@@ -8,11 +9,15 @@ const StepThree = () => {
           label="prefered theme"
           options={["Dark", "Light", "Cubcake", "Darcula"]}
           defaultValue="Light"
+          name="theme"
+          component="select"
         />
         <FormSelect
           label="gender "
           options={["Male", "Female"]}
           defaultValue=""
+          name="gender"
+          component="select"
         />
         <div className="form-control">
           <label className="label cursor-pointer mt-10">
@@ -32,17 +37,22 @@ const StepThree = () => {
           label="language "
           options={["Turkish", "English"]}
           defaultValue=""
+          name="language"
+          component="select"
         />
         <FormInput
           type="number"
           label="age"
           name="age"
           placeHolder="Enter your age"
+          component="input"
         />
         <FormSelect
           label="prefered contact"
           options={["Email", "Phone Number"]}
           defaultValue=""
+          name="contact"
+          component="select"
         />
       </div>
     </div>
