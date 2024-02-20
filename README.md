@@ -8,8 +8,7 @@ This project is a demonstration of complex form handling and validation using Re
 - [Installation](#installation)
 - [Usage](#usage)
 - [Documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
+- [License](#License)
 
 ## Features
 
@@ -48,10 +47,24 @@ npm run dev
 
 This will start the development server and open the application in your default web browser.
 
-## Fetching Data
+## Documentation
+
+### Running the App
+
+- Ensure you have Node.js and npm installed on your system.
+- Clone the repository and navigate to the project directory.
+- Install dependencies using npm install.
+- Start the development server with npm run dev.
+- Open your web browser and navigate to http://localhost:5173.
+
+### Fetching Data
 
 Data fetching methods and endpoints are not implemented in this project as it focuses solely on form handling and validation.
 
-## Navigating Through Components
+### Navigating Through Components
 
 The multi-step form allows users to navigate forward and backward between different components (steps) using the provided navigation buttons.
+
+## License
+
+[Abdelrahman Mohammed]
