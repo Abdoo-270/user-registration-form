@@ -35,5 +35,23 @@ cd user-registration-form
 3. Install dependencies:
 
 ```
-npm install
+npm install --legacy-peer-deps
 ```
+
+## Usage
+
+To run the application, use the following command:
+
+```
+npm run dev
+```
+
+This will start the development server and open the application in your default web browser.
+
+## Fetching Data
+
+Data fetching methods and endpoints are not implemented in this project as it focuses solely on form handling and validation.
+
+## Navigating Through Components
+
+The multi-step form allows users to navigate forward and backward between different components (steps) using the provided navigation buttons.
