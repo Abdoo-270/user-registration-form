@@ -1,4 +1,4 @@
-const NavBtns = ({ step, nextStep, prevStep }) => {
+const NavBtns = ({ step, nextStep, prevStep, submitForm }) => {
   return (
     <div className=" mx-60 flex justify-between items-center">
       <div className="text-lg font-semibold">
@@ -20,6 +20,11 @@ const NavBtns = ({ step, nextStep, prevStep }) => {
             onClick={nextStep}
           >
             Next Step
+          </button>
+        )}
+        {step === 4 && (
+          <button className="ml-2  btn btn-primary bg-teal-400 font-semibold">
+            Submit
           </button>
         )}
       </div>

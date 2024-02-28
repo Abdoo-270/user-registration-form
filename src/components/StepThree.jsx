@@ -25,8 +25,8 @@ const StepThree = () => {
               Do you want to send you adds
             </span>
             <input
+              defaultChecked
               type="checkbox"
-              checked="checked"
               className="checkbox rounded-none"
             />
           </label>

@@ -1,4 +1,6 @@
 import { Field } from "redux-form";
+import { v4 as uuidv4 } from "uuid";
+
 const FormSelect = ({ label, options, defaultValue, component, name }) => {
   return (
     <>
@@ -11,11 +13,9 @@ const FormSelect = ({ label, options, defaultValue, component, name }) => {
           component={component}
           className="select select-bordered w-full max-w-xs rounded-none"
         >
-          <option disabled selected>
-            {defaultValue}
-          </option>
+          <option disabled>{defaultValue}</option>
           {options.map((item) => {
-            return <option>{item}</option>;
+            return <option key={uuidv4()}>{item}</option>;
           })}
         </Field>
       </label>
